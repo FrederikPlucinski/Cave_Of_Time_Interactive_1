@@ -9,7 +9,9 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Cave_of_Time_Second_Person.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Cave_of_Time_Second_Person" startnode="1" creator="Twine" creator-version="2.6.2" format="Harlowe" format-version="3.3.5" ifid="BAAF9C63-D31B-4C0E-B52F-6511CF98F3E3" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="End" color="red"></tw-tag><tw-passagedata pid="1" name="1" tags="" position="3150,2725" size="100,100">(set: $NumTries to 0)
+<tw-storydata name="Cave_of_Time_Second_Person" startnode="1" creator="Twine" creator-version="2.6.2" format="Harlowe" format-version="3.3.5" ifid="BAAF9C63-D31B-4C0E-B52F-6511CF98F3E3" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-sidebar {
+    display: none;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="End" color="red"></tw-tag><tw-tag name="footer" color="purple"></tw-tag><tw-passagedata pid="1" name="1" tags="" position="3150,2725" size="100,100">(set: $NumTries to 0)
 (set: $NumChoicesMade to 0)
 
 The Cave of Time
@@ -39,6 +41,8 @@ Inside, a smooth-walled tunnel glows dimly. As you venture inside, the tunnel cu
 What do you do?
 [[Go to your uncle’s Ranch!-&gt;4]]
 [[Wait!-&gt;5]]
+
+
 </tw-passagedata><tw-passagedata pid="3" name="4" tags="" position="3625,2325" size="100,100">(set: $NumChoicesMade to it+1)
 
 As you head back to the ranch, you notice the trail is different and realize you&#39;re on a dry riverbed. On closer inspection, you see the landscape has changed drastically due to water washing out the trail. 
@@ -688,7 +692,10 @@ When you tell the guard you are innocent, he scowls and slams shut the door of t
 
 (link:&quot;Click here to start from the beginning!&quot;)
 [(goto:&quot;2+3&quot;)]
-</tw-passagedata></tw-storydata>
+</tw-passagedata><tw-passagedata pid="89" name="Untitled Passage" tags="footer" position="2925,2300" size="100,100">
+
+(text-colour:(hsl:0,0,0.5333,0.25))[Number of choices: &#39;&#39;$NumChoicesMade &#39;&#39;
+Number of story attempts: &#39;&#39;$NumTries &#39;&#39;]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
